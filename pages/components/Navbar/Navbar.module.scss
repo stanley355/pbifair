@@ -2,6 +2,10 @@
 
 .navbar {
   width: 100%;
-  padding: $space--md $space--md;
+  padding: $space--xxs $space--md;
   background: $primary-color;
+
+  h2 {
+    color: $color-white;
+  }
 }

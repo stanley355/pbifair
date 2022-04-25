@@ -5,7 +5,7 @@ import styles from './Navbar.module.scss';
 const Navbar = () => {
   return (
     <header className={styles.navbar}>
-      <h3>PBI UAJ</h3>
+      <h2>PBI UAJ</h2>
     </header>
   );
 }
