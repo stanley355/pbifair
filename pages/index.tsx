@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     if (!username) setShowError(true);
     else {
       setHasName(true);
-      setTimeout(() => Router.push("/quest1"), 1500)
+      setTimeout(() => Router.push("/quest-1"), 1000)
     }
   }
 
