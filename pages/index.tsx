@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Router from 'next/router';
 
+import useResponsive from '../utils/useResponsive';
+
 import styles from '../styles/pages/landing.module.scss';
 
 const Home: NextPage = () => {
