@@ -11,12 +11,12 @@ const Quest2 = () => {
 
   const answerHandler = (e: any) => {
     e.preventDefault();
-    const answerValue = e.target.answer.value;
-    const answer = answerValue.toLowerCase().replace(/\s+/g, "")
-    if (answer !== "yanti") setShowError(true);
+
+    const {radioAnswer} = e.target;
+    if (radioAnswer.value !== "ans1") setShowError(true);
     else {
       setHasAnswer(true);
-      setTimeout(() => Router.push("/quest-2"), 1000)
+      setTimeout(() => Router.push("/quest-3"), 1000)
     }
   }
   const QuestionForm = () => {
@@ -25,7 +25,7 @@ const Quest2 = () => {
         <div className={styles.quest2__question}>"To strive, to seek, and not to yield" is the last line of a poem called...</div>
         {answerOptions.map((option) =>
           <div className={styles.quest2__inputContainer}>
-            <input type="radio" name={option.value}/>
+            <input type="radio" name="radioAnswer" value={option.value}/>
             <label htmlFor={option.value}>{option.title}</label>
           </div>
         )}
@@ -39,7 +39,7 @@ const Quest2 = () => {
       <div className={styles.quest2}>
         {hasAnswer ?
           <div>
-            <div>Yep, they are really old friends</div>
+            <div>As man we shall not yield to circumstances</div>
             <div>Redirecting...</div>
           </div> : <QuestionForm />}
       </div>
