@@ -26,31 +26,39 @@
   }
 
   &__guideline {
+    background: $color-black;
     padding: $space--sm;
     position: fixed;
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: $color-white;
 
     &__head {
       display: flex;
       flex-direction: column;
       align-items: center;
 
+      &__logoContainer {
+        background: $color-white;
+        border-radius: $space--sm;
+        padding: 0 $space--xs;
+      }
+
       &__menu {
         width: 100%;
         padding: $space--sm 0;
         display: grid;
         grid-template-columns: 25% 50% 25%;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $color-white;
+        color: $color-white;
 
         &__backBtn {
           background: none;
           border: none;
           text-align: left;
           font-size: $font--xl;
+          color: $color-white;
         }
 
         &__title {
@@ -64,9 +72,27 @@
           border: none;
           text-align: right;
           font-weight: bold;
-          font-size: $font--xxxl;
         }
       }
+    }
+
+    &__body {
+      padding: $space--xs;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      button {
+        padding: $space--sm $space--xs;
+        border-radius: $space--xs;
+        margin: $space--xs 0;
+        font-size: $space--lg;
+      }
+    }
+
+    &__welcome {
+      color: $color-white;
     }
   }
 }
