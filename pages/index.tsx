@@ -22,12 +22,15 @@ const Home: NextPage = () => {
 
   const LandingForm = () => {
     return (
-      <form onSubmit={usernameHandler}>
-        <label htmlFor="username">What's in a name?</label>
-        <input type="text" name='username' placeholder='My name is ...' />
-        <button type="submit">Let's Go</button>
-        {showError && <div className={styles.landing__error}>Please tell me before you go</div>}
-      </form>
+      <div>
+        <form onSubmit={usernameHandler}>
+          <label htmlFor="username">What's in a name?</label>
+          <input type="text" name='username' placeholder='My name is ...' />
+          <button type="submit">Let's Go</button>
+          {showError && <div className={styles.landing__error}>Please tell me before you go</div>}
+        </form>
+        <p>* To see the guideline of this game, it's always on the top right of the screen</p>
+      </div>
     )
   }
 
