@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
+import useResponsive from '../../utils/useResponsive';
 import { FaRegPaperPlane, FaArrowLeft } from 'react-icons/fa';
 
 const Navbar = () => {
+
+  const {isDesktop} = useResponsive();
+
   const [showGuideline, setShowGuideline] = useState(false);
   const [selectedGuideline, setSelectedGuideline] = useState("");
 
@@ -226,6 +230,7 @@ const Navbar = () => {
           height="50px"
         />
       </div>
+      {isDesktop && <div className={styles.navbar__title}>Finders Seekers</div>}
       <button className={styles.navbar__openGuidelineBtn} onClick={() => setShowGuideline(true)}>
         <FaRegPaperPlane />
         <div>Guideline</div>

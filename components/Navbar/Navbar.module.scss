@@ -8,6 +8,13 @@
   align-items: center;
   justify-content: space-between;
 
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    color:$color-white;
+    font-style: italic;
+  }
+
   &__openGuidelineBtn {
     background: none;
     border: none;
