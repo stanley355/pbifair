@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Router from 'next/router';
 import Guideline from '../components/Guideline/Guideline';
-import useResponsive from '../utils/useResponsive';
-
+import { addUser } from '../lib/api/addUser';
 import styles from '../styles/pages/landing.module.scss';
 
 const Home: NextPage = () => {
   const [showError, setShowError] = useState(false);
-  const [hasName, setHasName] = useState(false);
   const [showForm, setShowForm] = useState(false);
 
-  const usernameHandler = (e: any) => {
+  const usernameHandler = async (e: any) => {
     e.preventDefault();
     const username = e.target.username.value;
     const email = e.target.email.value;
     if (!username || !email) setShowError(true);
     else {
-      setHasName(true);
-      setTimeout(() => Router.push("/quest-1"), 1000)
+      const addToDatabase = await addUser(username, email);
+      console.log(addToDatabase);
+
+      // setTimeout(() => Router.push("/quest-1"), 1000)
     }
   }
 

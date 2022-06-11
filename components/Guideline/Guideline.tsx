@@ -32,7 +32,7 @@ const Guideline = () => {
     return (
       <div className={styles.guideline__list}>
         {guidelineMenu.map((menu) =>
-          <button onClick={() => setSelectedGuideline(menu.value)} >{menu.title}</button>
+          <button onClick={() => setSelectedGuideline(menu.value)} key={menu.title}>{menu.title}</button>
         )}
       </div>
     )
