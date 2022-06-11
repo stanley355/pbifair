@@ -9,11 +9,13 @@ import styles from '../styles/pages/landing.module.scss';
 const Home: NextPage = () => {
   const [showError, setShowError] = useState(false);
   const [hasName, setHasName] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   const usernameHandler = (e: any) => {
     e.preventDefault();
     const username = e.target.username.value;
-    if (!username) setShowError(true);
+    const email = e.target.email.value;
+    if (!username || !email) setShowError(true);
     else {
       setHasName(true);
       setTimeout(() => Router.push("/quest-1"), 1000)
@@ -22,23 +24,38 @@ const Home: NextPage = () => {
 
   const LandingForm = () => {
     return (
-      <div>
+      <div className={styles.landing__form}>
         <form onSubmit={usernameHandler}>
           <label htmlFor="username">What's in a name?</label>
           <input type="text" name='username' placeholder='My name is ...' />
+          <label htmlFor="email">What's in an email?</label>
+          <input type="email" name='email' placeholder='My email is ...' />
           <button type="submit">Let's Go</button>
-          {showError && <div className={styles.landing__error}>Please tell me before you go</div>}
+          {showError && <div className={styles.landing__form__error}>Username and email can't be empty</div>}
         </form>
-        <p>* To see the guideline of this game, it's always on the top right of the screen</p>
+        <p>* *You can always see the guideline of the game on top right of your screen</p>
       </div>
     )
+  }
+
+  const FrontPage = () => {
+    return (
+      <div className={styles.landing__front}>
+        <Guideline />
+        <div className={styles.landing__front__main}>
+          <div className={styles.landing__front__question}>Seekers, are you ready to go???</div>
+          <button className={styles.landing__front__cta} onClick={()=> setShowForm(true)}>Start</button>
+          <div className={styles.landing__front__note}>* You can always see the guideline of the game on top right of your screen</div>
+          </div>
+      </div>
+    );
   }
 
   return (
     <div className="container">
       <div className={styles.landing}>
         <h1>Finders Seekers</h1>
-        <Guideline />
+        {showForm ? <LandingForm />: <FrontPage />}
       </div>
     </div>
   )

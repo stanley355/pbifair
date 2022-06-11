@@ -5,4 +5,81 @@
     text-align: center;
     font-style: italic;
   }
+
+  &__front {
+
+    &__main {
+      margin-top: $space--xxl;
+
+      @include desktop-view {
+        width: 60%;
+        margin: auto;
+        margin-top: 36px;
+      }
+    }
+
+    &__question {
+      font-size: $font--xxl;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    &__cta {
+      width: 100%;
+      font-size: $font--xxl;
+      padding: $space--sm;
+      font-weight: bold;
+      border: none;
+      background: $color-brown;
+      border-radius: $space--xs;
+      margin: $space--sm 0;
+      color: $color-white;
+    }
+
+    &__cta:hover {
+      color: $color-brown;
+      background: none;
+      border: 1px solid $color-brown;
+      cursor: pointer;
+    }
+
+    &__note {
+      font-size: $font--lg;
+    }
+  }
+
+  &__form {
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: $font--xl;
+        font-weight: bold;
+        margin: $space--sm 0;
+      }
+
+      input {
+        padding: $space--sm;
+        font-size: $font--lg;
+        border-radius: $space--xs;
+        border: none;
+        margin-bottom: $space--sm;
+      }
+
+      button {
+        padding: $space--sm;
+        font-size: $font--lg;
+        font-weight: bold;
+        border-radius: $space--xs;
+        background: $color-brown;
+        color:$color-white;
+      }
+    }
+
+    &__error {
+      margin: $space--sm 0;
+      color: red;
+    }
+  }
 }
