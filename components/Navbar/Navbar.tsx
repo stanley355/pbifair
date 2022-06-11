@@ -202,12 +202,8 @@ const Navbar = () => {
     return (
       <div className={styles.navbar__guideline}>
         <div className={styles.navbar__guideline__head}>
-          <div className={styles.navbar__guideline__head__logoContainer}>
-            <img
-              src="/images/atma-logo.png"
-              width="180px"
-              height="80px"
-            />
+          <div className={styles.navbar__guideline__head__logo}>
+            Finders Seekers
           </div>
           <div className={styles.navbar__guideline__head__menu}>
             <button className={styles.navbar__guideline__head__menu__backBtn} onClick={backToPrevMenu}><FaArrowLeft /> </button>

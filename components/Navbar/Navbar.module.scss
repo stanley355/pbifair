@@ -32,7 +32,7 @@
   }
 
   &__guideline {
-    background: $color-black;
+    background: url('/images/background.jpg');
     padding: $space--sm;
     position: fixed;
     top:0;
@@ -41,15 +41,25 @@
     height: 90%;
     overflow-y: scroll;
 
+    
+
     &__head {
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include desktop-view {
+        width: 50%;
+        margin: auto;
+      }
 
-      &__logoContainer {
+      &__logo {
         background: $color-white;
         border-radius: $space--sm;
-        padding: 0 $space--xs;
+        padding: $space--sm;
+        font-size: $font--xxxl;
+        font-weight: bold;
+        font-style: italic;
+        margin: $space--sm 0;
       }
 
       &__menu {
@@ -57,15 +67,15 @@
         padding: $space--sm 0;
         display: grid;
         grid-template-columns: 25% 50% 25%;
-        border-bottom: 1px solid $color-white;
-        color: $color-white;
+        border-bottom: 1px solid $color-black;
+
+        
 
         &__backBtn {
           background: none;
           border: none;
           text-align: left;
           font-size: $font--xl;
-          color: $color-white;
         }
 
         &__title {
@@ -90,23 +100,35 @@
     &__list {
       display: flex;
       flex-direction: column;
+      @include desktop-view {
+        width: 50%;
+        margin: auto;
+      }
       button {
         padding: $space--sm $space--xs;
         border-radius: $space--xs;
         margin: $space--xs 0;
         font-size: $space--lg;
+        background: $color-brown;
+        color:$color-white;
+        border: none;
+        font-weight: bold;
       }
     }
 
     &__welcome, &__schedule, &__about, &__tips, &__winning {
-      color: $color-white;
       line-height: 1.5;
+      @include desktop-view {
+        width: 50%;
+        margin: auto;
+        font-size: $font--lg;
+      }
 
       h3 {
         text-align: center;
       }
       th, td {
-        border: 1px solid $color-white;
+        border: 1px solid $color-black;
         padding: $space--xxs;
       }
     }
