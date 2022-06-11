@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Router from 'next/router';
-
+import Guideline from '../components/Guideline/Guideline';
 import useResponsive from '../utils/useResponsive';
 
 import styles from '../styles/pages/landing.module.scss';
@@ -37,13 +37,8 @@ const Home: NextPage = () => {
   return (
     <div className="container">
       <div className={styles.landing}>
-        {hasName ?
-          <>
-            <div>By any other name you would smell as sweet</div>
-            <div>Redirecting...</div>
-          </> :
-          <LandingForm />
-        }
+        <h1>Finders Seekers</h1>
+        <Guideline />
       </div>
     </div>
   )

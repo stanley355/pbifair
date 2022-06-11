@@ -1,40 +1,8 @@
 @import "../tokens/all";
 
 .landing {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    label {
-      text-align: center;
-      font-size: $font--xxl;
-      margin: $space--sm 0;
-    }
-    input {
-      padding: $space--xs;
-      font-size: $font--xl;
-      border-radius: $space--xs;
-    }
-
-    button {
-      background: $primary-color;
-      border-radius: $space--xs;
-      padding: $space--xs;
-      color: $color-white;
-      font-size: $font--lg;
-      margin: $space--xs 0;
-      border: none;
-    }
-  }
-
-  &__error {
+  h1 {
     text-align: center;
-    margin: $space--xs 0;
-    color: red;
+    font-style: italic;
   }
 }

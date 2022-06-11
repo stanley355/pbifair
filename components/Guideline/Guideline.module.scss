@@ -1,0 +1,53 @@
+
+@import '../../styles/tokens/all';
+
+
+.guideline {
+  width: 100%;
+  overflow-y: scroll;
+
+  &__head {
+    &__backBtn {
+      background: none;
+      border: none;
+      color: $color-black;
+
+      svg {
+        font-size: $font--xxl;
+      }
+    }
+  }
+
+  &__body {
+    padding: $space--xs;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    button {
+      padding: $space--sm $space--xs;
+      border-radius: $space--xs;
+      margin: $space--xs 0;
+      font-size: $space--lg;
+      background: $color-brown;
+      border: none;
+      color:$color-white;
+      font-weight: bold;
+    }
+  }
+
+  &__welcome, &__schedule, &__about, &__tips, &__winning {
+    color: $color-black;
+    font-weight: bold;
+    line-height: 1.5;
+
+    h3 {
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid $color-white;
+      padding: $space--xxs;
+    }
+  }
+}

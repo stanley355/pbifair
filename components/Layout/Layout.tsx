@@ -11,7 +11,7 @@ const Layout = ({ children }: any) => {
     <div className="">
       <Navbar />
       {children}
-      {!isDesktop && <RoadmapMobile />}
+      {/* {!isDesktop && <RoadmapMobile />} */}
     </div>
   )
 }
