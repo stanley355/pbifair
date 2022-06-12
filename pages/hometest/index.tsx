@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Router from 'next/router';
 import Guideline from '../../components/Guideline/Guideline';
 import { addUser } from '../../lib/api/addUser';
-import styles from '../styles/pages/landing.module.scss';
+import styles from '../../styles/pages/landing.module.scss';
 
 const HomeTest: NextPage = () => {
   const [showError, setShowError] = useState(false);
