@@ -6,7 +6,7 @@ const { PBIRUST_URL } = getConfig().publicRuntimeConfig;
 export const addUser = async (username: string, email: string) => {
   const addUserRequest = {
     method: "POST",
-    url: `${PBIRUST_URL}/api/users/`,
+    url: '/api/addUser/',
   };
 
   const date = new Date();

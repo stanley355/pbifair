@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Router from 'next/router';
-import Guideline from '../components/Guideline/Guideline';
-import { addUser } from '../lib/api/addUser';
+import Guideline from '../../components/Guideline/Guideline';
+import { addUser } from '../../lib/api/addUser';
 import styles from '../styles/pages/landing.module.scss';
 
-const Home: NextPage = () => {
+const HomeTest: NextPage = () => {
   const [showError, setShowError] = useState(false);
   const [showForm, setShowForm] = useState(false);
 
@@ -42,11 +42,11 @@ const Home: NextPage = () => {
     return (
       <div className={styles.landing__front}>
         <Guideline />
-        {/* <div className={styles.landing__front__main}>
+        <div className={styles.landing__front__main}>
           <div className={styles.landing__front__question}>Seekers, are you ready to go???</div>
-          <button className={styles.landing__front__cta} onClick={() => setShowForm(true)}>Start</button>
+          <button className={styles.landing__front__cta} onClick={()=> setShowForm(true)}>Start</button>
           <div className={styles.landing__front__note}>* You can always see the guideline of the game on top right of your screen</div>
-        </div> */}
+          </div>
       </div>
     );
   }
@@ -55,10 +55,10 @@ const Home: NextPage = () => {
     <div className="container">
       <div className={styles.landing}>
         <h1>Finders Seekers</h1>
-        <FrontPage />
+        {showForm ? <LandingForm />: <FrontPage />}
       </div>
     </div>
   )
 }
 
-export default Home
+export default HomeTest
