@@ -9,7 +9,6 @@ interface RestClientConfig {
 
 const RestClient = async (config: RestClientConfig, data: any) => {
   let response;
-  console.log(data);
 
   try {
     response = await axios({
