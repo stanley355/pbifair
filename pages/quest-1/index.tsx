@@ -30,11 +30,12 @@ const Quest1 = () => {
   return (
     <div className="container">
       <div className={styles.quest1}>
-        {hasAnswer ?
+        {/* {hasAnswer ?
           <div>
             <div>Yep, they are really old friends</div>
             <div>Redirecting...</div>
-          </div> : <QuestionForm />}
+          </div> : <QuestionForm />} */}
+          <h1>Please go to /admin to check if you exist</h1>
       </div>
     </div>
   )

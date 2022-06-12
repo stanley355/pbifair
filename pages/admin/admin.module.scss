@@ -1,0 +1,23 @@
+@import '../../styles/tokens/all';
+
+.admin {
+  table {
+    border-collapse: collapse;
+    th, td {
+      border: 1px solid $color-black;
+    }
+
+    th {
+      padding: $space--sm;
+    }
+
+    td {
+      text-align: center;
+      padding: $space--xs 0;
+
+      @include desktop-view {
+        padding: $space--sm;
+      }
+    }
+  }
+}
