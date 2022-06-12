@@ -8,6 +8,7 @@ import styles from '../../styles/pages/landing.module.scss';
 const HomeTest: NextPage = () => {
   const [showError, setShowError] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   const usernameHandler = async (e: any) => {
     e.preventDefault();
@@ -15,10 +16,15 @@ const HomeTest: NextPage = () => {
     const email = e.target.email.value;
     if (!username || !email) setShowError(true);
     else {
+      setHasSubmitted(true);
       const addToDatabase = await addUser(username, email);
-      console.log(addToDatabase);
 
-      // setTimeout(() => Router.push("/quest-1"), 1000)
+      if (addToDatabase) {
+        Router.push("/quest-1");
+      } else {
+        alert("Something wrong, please try again");
+        setHasSubmitted(false)
+      }
     }
   }
 
@@ -26,11 +32,11 @@ const HomeTest: NextPage = () => {
     return (
       <div className={styles.landing__form}>
         <form onSubmit={usernameHandler}>
-          <label htmlFor="username">What's in a name?</label>
+          <label htmlFor="username">Your name?</label>
           <input type="text" name='username' placeholder='My name is ...' />
-          <label htmlFor="email">What's in an email?</label>
+          <label htmlFor="email">Your current email?</label>
           <input type="email" name='email' placeholder='My email is ...' />
-          <button type="submit">Let's Go</button>
+          <button type="submit">{hasSubmitted ? "Loading..." :  "Let's Go"}</button>
           {showError && <div className={styles.landing__form__error}>Username and email can't be empty</div>}
         </form>
         <p>* *You can always see the guideline of the game on top right of your screen</p>
