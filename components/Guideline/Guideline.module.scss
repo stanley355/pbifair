@@ -15,12 +15,18 @@
 
   &__head {
     &__backBtn {
-      background: none;
+      background: $color-brown;
       border: none;
-      color: $color-black;
+      color: $color-white;
+      display: flex;
+      align-items: center;
+      font-size: $font--lg;
+      padding: $space--xs;
+      font-weight: bold;
 
       svg {
-        font-size: $font--xxl;
+        font-size: $font--xl;
+        margin-right: $space--xs;
       }
     }
   }

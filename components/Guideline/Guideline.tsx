@@ -190,17 +190,19 @@ const Guideline = () => {
 
   return (
     <div className={styles.guideline}>
-      {selectedGuideline !== "" &&
-        <div className={styles.guideline__head}>
-          <button className={styles.guideline__head__backBtn} onClick={() => setSelectedGuideline("")}>
-            <FaArrowAltCircleLeft /> 
-          </button>
-        </div>
-      }
+      
 
       <div className={styles.guideline__body}>
         {setShowingGuideline(selectedGuideline)}
       </div>
+
+      {selectedGuideline !== "" &&
+        <div className={styles.guideline__head}>
+          <button className={styles.guideline__head__backBtn} onClick={() => setSelectedGuideline("")}>
+            <FaArrowAltCircleLeft /> Back
+          </button>
+        </div>
+      }
     </div>
   );
 }
