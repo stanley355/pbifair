@@ -18,14 +18,12 @@ export const createCookie = (data: CookieInterface) => {
   return {
     name,
     email,
-    level,
+    level: Number(level),
   };
 };
 
-export const updateCookie = (data: CookieInterface) => {
-  Cookies.set("name", data.name);
-  Cookies.set("email", data.email);
-  Cookies.set("level", data.level.toString());
+export const updateCookie = (newLevel: number) => {
+  Cookies.set("level", newLevel.toString());
 
   const name = Cookies.get("name");
   const email = Cookies.get("email");
@@ -34,7 +32,7 @@ export const updateCookie = (data: CookieInterface) => {
   return {
     name,
     email,
-    level,
+    level: Number(level),
   };
 };
 
@@ -46,6 +44,6 @@ export const readCookie = () => {
   return {
     name,
     email,
-    level,
+    level: Number(level),
   };
 };

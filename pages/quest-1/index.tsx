@@ -10,6 +10,7 @@ const Quest1 = () => {
         <PassForm
           password="replace"
           nextURL='/quest-2/'
+          level={1}
         />
       </div>
     </div>
