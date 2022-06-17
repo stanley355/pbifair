@@ -35,8 +35,8 @@ const PassForm = (props: PassFormInterface) => {
 
   return (
     <form onSubmit={answerHandler} className={styles.passForm}>
-      <label htmlFor="answer">Passcode</label>
-      <input type="password" name='answer' placeholder='Passcode' />
+      <label htmlFor="answer">Ticket</label>
+      <input type="password" name='answer' placeholder='ticket' />
       <button type="submit">Submit</button>
       {showError && <div className={styles.passForm__error}>Oops Wrong Passcode</div>}
     </form>
