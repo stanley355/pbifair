@@ -11,11 +11,11 @@
   }
 
   label {
-    font-size: $font--xxxl;
+    font-size: $font--lg;
   }
 
   input {
-    font-size: $font--lg;
+    font-size: $font--md;
     padding: $space--xs;
     width: 100%;
     margin: $space--xs 0;
@@ -23,7 +23,7 @@
   }
 
   button {
-    font-size: $font--lg;
+    font-size: $font--md;
     padding: $space--xs;
     width: 100%;
     margin: $space--xs 0;
