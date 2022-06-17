@@ -16,8 +16,6 @@ const Home: NextPage = () => {
     if (!username || !email) setShowError(true);
     else {
       const addToDatabase = await addUser(username, email);
-      console.log(addToDatabase);
-
       // setTimeout(() => Router.push("/quest-1"), 1000)
     }
   }

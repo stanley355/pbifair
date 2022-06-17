@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Router from 'next/router';
+
 import Guideline from '../../components/Guideline/Guideline';
 import { addUser } from '../../lib/api/addUser';
+import { createCookie } from '../../utils/useCookie';
 import styles from '../../styles/pages/landing.module.scss';
 
 const HomeTest: NextPage = () => {
@@ -20,6 +22,13 @@ const HomeTest: NextPage = () => {
       const addToDatabase = await addUser(username, email);
 
       if (addToDatabase) {
+        const cookieData = {
+          name: username,
+          email: email,
+          level: 0,
+        }
+
+        createCookie(cookieData);
         Router.push("/quest-1");
       } else {
         alert("Something wrong, please try again");
@@ -67,4 +76,4 @@ const HomeTest: NextPage = () => {
   )
 }
 
-export default HomeTest
+export default HomeTest;
