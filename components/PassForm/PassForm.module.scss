@@ -1,0 +1,35 @@
+@import '../../styles/tokens/all';
+
+.passForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  label {
+    font-size: $font--xxxl;
+  }
+
+  input {
+    font-size: $font--lg;
+    padding: $space--xs;
+    width: 100%;
+    margin: $space--xs 0;
+    border-radius: $space--xs;
+  }
+
+  button {
+    font-size: $font--lg;
+    padding: $space--xs;
+    width: 100%;
+    margin: $space--xs 0;
+    border-radius: $space--xs;
+    background: $color-brown;
+    color:$color-white;
+    font-weight: bold;
+  }
+
+  &__error {
+    color:red;
+  }
+}
