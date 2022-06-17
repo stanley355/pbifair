@@ -1,0 +1,14 @@
+@import '../../styles/tokens/all';
+
+.quest4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include desktop-view {
+    width: 70%;
+    margin: auto;
+  }
+}

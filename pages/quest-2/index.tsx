@@ -1,6 +1,6 @@
 import React from 'react';
 import PassForm from '../../components/PassForm';
-import styles from './quest1.module.scss';
+import styles from './quest2.module.scss';
 import instructionStyle from '../../styles/pages/instruction.module.scss';
 
 const Quest2 = () => {
