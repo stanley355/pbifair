@@ -6,6 +6,10 @@
   justify-content: center;
   width: 100%;
 
+  @include desktop-view{
+    width: 50%;
+  }
+
   label {
     font-size: $font--xxxl;
   }
