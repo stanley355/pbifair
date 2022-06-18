@@ -7,7 +7,7 @@ const Quest3 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>Catch the Glitch</h3>
+        <h3>#3 Catch the Glitch</h3>
         <div className={instructionStyle.instructions__subtitle}>Rules/ Guidelines:</div>
         <ol>
           <li>Find the misspelled words in each of the sentences below.</li>

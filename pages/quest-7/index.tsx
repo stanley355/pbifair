@@ -7,7 +7,7 @@ const Quest7 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>Getting to know English Days</h3>
+        <h3>#7 Getting to know English Days</h3>
         <div className={instructionStyle.instructions__subtitle}>Instruction:</div>
         <ol>
           <li>Go to your Instagram and search HMPS PBI Instagram Account:

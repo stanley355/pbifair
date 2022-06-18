@@ -7,7 +7,7 @@ const Quest2 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>Down the Memory Lane</h3>
+        <h3>#2 Down the Memory Lane</h3>
         <div className={instructionStyle.instructions__subtitle}>Instruction</div>
         <ol>
           <li>Go to your Instagram and search HMPS PBI Instagram Account: <strong>@hmpspbi_uaj</strong>.</li>

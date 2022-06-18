@@ -7,7 +7,7 @@ const Quest4 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>Tongue Twister</h3>
+        <h3>#4 Tongue Twister</h3>
         <div className={instructionStyle.instructions__subtitle}>Rules/ Guidelines:</div>
         <ol>
           <li>Make a video of you reading these sentence:

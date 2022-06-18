@@ -7,7 +7,7 @@ const Quest1 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>Who's the Alumni</h3>
+        <h3>#1 Who's the Alumni</h3>
         <div className={instructionStyle.instructions__subtitle}>Instruction</div>
         <ul>
           <li>Open your Instagram and search <strong>@pbiuaj</strong> IG account.</li>

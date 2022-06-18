@@ -7,7 +7,7 @@ const Quest8 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>Figure in the Picture</h3>
+        <h3>#8 Figure in the Picture</h3>
         <div className={instructionStyle.instructions__subtitle}>Rules and Guidelines:</div>
         <ol>
           <li>Find a picture that you think represents a teacher.</li>
