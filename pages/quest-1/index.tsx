@@ -4,6 +4,7 @@ import styles from './quest1.module.scss';
 import instructionStyle from '../../styles/pages/instruction.module.scss';
 
 const Quest1 = () => {
+
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
@@ -28,7 +29,7 @@ const Quest1 = () => {
             Save your file and name it with this format:
             <strong>Nickname_whosthealumni</strong> (Note: Nickname as registered in Finders Seekers)
           </li>
-          <li>Upload the file to this link: 
+          <li>Upload the file to this link:
             <a href="https://tinyurl.com/2p8fnp8e">https://tinyurl.com/2p8fnp8e</a>
           </li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>

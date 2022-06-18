@@ -1,6 +1,7 @@
 @import '../../styles/tokens/all';
 
 .admin {
+  overflow-x: scroll;
   table {
     border-collapse: collapse;
     th, td {
@@ -13,7 +14,7 @@
 
     td {
       text-align: center;
-      padding: $space--xs 0;
+      padding: $space--xs;
 
       @include desktop-view {
         padding: $space--sm;

@@ -44,6 +44,6 @@ export const readCookie = () => {
   return {
     name,
     email,
-    level: Number(level),
+    level: level ? Number(level) : null,
   };
 };

@@ -1,17 +1,17 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import RoadmapMobile from '../Roadmap/Mobile/RoadmapMobile';
-import useResponsive from '../../utils/useResponsive';
-
+import { useRedirect } from '../../utils/useRedirect';
 
 const Layout = ({ children }: any) => {
 
-  const {isDesktop} = useResponsive()
+  if (typeof window !== 'undefined') {
+    useRedirect();
+  }
+
   return (
     <div className="">
       <Navbar />
       {children}
-      {/* {!isDesktop && <RoadmapMobile />} */}
     </div>
   )
 }

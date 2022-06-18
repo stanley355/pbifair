@@ -4,6 +4,7 @@ import styles from './quest2.module.scss';
 import instructionStyle from '../../styles/pages/instruction.module.scss';
 
 const Quest2 = () => {
+
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
