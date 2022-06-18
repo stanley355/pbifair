@@ -17,13 +17,13 @@ const Quest4 = () => {
           <li>You can use any background that you like.</li>
           <li>Do not add any offensive words or sentences (regarding culture, religion, race, etc.) to the video.</li>
           <li>
-            You can watch this video as an example: [Link]
+            You can watch the sample video which is available at this link <a href="https://tinyurl.com/3u45fn27">https://tinyurl.com/3u45fn27</a>
           </li>
           <li>
             Save your video in MP4, and rename your file as “Nickname_Tonguetwister”. Make sure that you put the nickname you have registered.
           </li>
           <li>
-          Upload your video to <a href="https://tinyurl.com/3u45fn27">https://tinyurl.com/3u45fn27</a>.
+            Upload your video to <a href="https://tinyurl.com/3u45fn27">https://tinyurl.com/3u45fn27</a>.
           </li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>
           <li>If you have any problem, contact the PIC through Whatsapp (Edward - 089502941841 and Aliana - 082197790811)</li>
