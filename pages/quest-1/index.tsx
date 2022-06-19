@@ -32,7 +32,9 @@ const Quest1 = () => {
             <a href="https://tinyurl.com/2p8fnp8e">https://tinyurl.com/2p8fnp8e</a>
           </li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>
-          <li>If you have any problem, contact the PIC through Whatsapp (Laura - 0895330282668)</li>
+          <li>If you have any problem, contact the PIC through Whatsapp (Laura -
+            <a href="https://api.whatsapp.com/send/?phone=62895330282668"> 0895330282668</a>)
+          </li>
         </ul>
       </div>
     )

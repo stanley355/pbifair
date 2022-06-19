@@ -18,7 +18,8 @@ const Quest8 = () => {
           <li>Your work will be evaluated by the committee to consider whether you are eligible for the chance of winning daily prizes, and  so make sure that you upload a proper work.</li>
           <li>If your work has the highest vote from the committee, you will have a chance of getting a +5 points.</li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>
-          <li>If you have any problem, contact the PIC through Whatsapp (Edward - 089502941841)</li>
+          <li>If you have any problem, contact the PIC through Whatsapp (Edward - <a href="https://api.whatsapp.com/send/?phone=6289502941841"> 089502941841</a>)</li>
+          
         </ol>
       </div>
     )

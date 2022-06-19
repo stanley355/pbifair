@@ -26,7 +26,12 @@ const Quest4 = () => {
             Upload your video to <a href="https://tinyurl.com/3u45fn27">https://tinyurl.com/3u45fn27</a>.
           </li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>
-          <li>If you have any problem, contact the PIC through Whatsapp (Edward - 089502941841 and Aliana - 082197790811)</li>
+          <li>If you have any problem, contact the PIC through Whatsapp (Aliana -
+            <a href="https://api.whatsapp.com/send/?phone=6282197790811"> 082197790811 </a>
+            and Edward -
+            <a href="https://api.whatsapp.com/send/?phone=62889502941841"> 089502941841 </a>
+            )
+          </li>
           <li>Your video will be evaluated by the committee to consider whether you are eligible for the chance of winning daily chances, so make sure that you upload a proper video!</li>
           <li>By uploading your video, you will be given the ticket to progress to the next level. </li>
           <li>By uploading a proper video, you will have a chance of winning the highest vote from the committee and thus getting a +5 points.</li>

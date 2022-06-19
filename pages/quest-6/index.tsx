@@ -30,7 +30,12 @@ const Quest6 = () => {
           </li>
           <li>If your work has the highest vote from the committee, you will have the chance of getting a +5 points.</li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>
-          <li>If you have any problem, contact the PIC through Whatsapp (Aliana - 082197790811 and Edward - 089502941841)</li>
+          <li>If you have any problem, contact the PIC through Whatsapp (Aliana -
+            <a href="https://api.whatsapp.com/send/?phone=6282197790811"> 082197790811 </a>
+            and Edward -
+            <a href="https://api.whatsapp.com/send/?phone=62889502941841"> 089502941841 </a>
+            )
+          </li>
         </ol>
       </div>
     )

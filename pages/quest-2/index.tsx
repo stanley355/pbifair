@@ -22,7 +22,12 @@ const Quest2 = () => {
             <a href="https://tinyurl.com/3zx777d7">https://tinyurl.com/3zx777d7</a>
           </li>
           <li>You will get the ticket immediately after you have uploaded your work.</li>
-          <li>If you have any problem, contact the PIC through Whatsapp (Aurelie - 0895-3588-8056 or Grace - 0812-9227-7252) </li>
+          <li>If you have any problem, contact the PIC through Whatsapp (Aurelie -
+            <a href="https://api.whatsapp.com/send/?phone=6289535888056"> 089535888056 </a>
+            or Grace -
+            <a href="https://api.whatsapp.com/send/?phone=6281292277252"> 081292277252</a>
+            )
+          </li>
         </ol>
       </div>
     )
