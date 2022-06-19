@@ -4,9 +4,9 @@ import { useRedirect } from '../../utils/useRedirect';
 
 const Layout = ({ children }: any) => {
 
-  if (typeof window !== 'undefined') {
-    useRedirect();
-  }
+  // if (typeof window !== 'undefined') {
+  //   useRedirect();
+  // }
 
   return (
     <div className="">

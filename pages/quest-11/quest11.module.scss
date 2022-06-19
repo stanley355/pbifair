@@ -1,13 +1,28 @@
 @import '../../styles/tokens/all';
 
-.quest9 {
+.quest11 {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   div {
     line-height: 1.5;
+
+    a {
+      overflow-x: scroll;
+    }
+  }
+
+  table {
+    overflow-x: scroll;
+    border-collapse: collapse;
+    margin: $space--xs 0;
+    th, td {
+      padding: $space--xxs;
+      border: 1px solid black;
+    }
   }
 
   @include desktop-view {
