@@ -21,8 +21,7 @@ const Quest1 = () => {
             </ol>
           </li>
           <li>
-            Watch one out of three videos and find at least two points
-            about in what way learning in PBI had prepared the alumni to do their current job.
+            Watch one out of three videos and find at least two points about in what way learning in PBI had prepared the alumni to do their current job.
           </li>
           <li>Type the information from one of those alumni in Ms.word/Gdocs.</li>
           <li>

@@ -16,7 +16,7 @@ const Quest2 = () => {
           <li>Arrange all the activities from the oldest to the newest events in accordance to the dates of the events.</li>
           <li>Type your answers in Ms.word/Gdocs.</li>
           <li>
-            Don’t forget to change your name to the following format: <strong> Name_DownTheMemoryLane</strong>
+            Don't forget to name your file in the following format: <strong>Nickname_DownTheMemoryLane</strong>  (Note: Nickname as registered in Finders Seekers)
           </li>
           <li>Upload your work to
             <a href="https://tinyurl.com/3zx777d7">https://tinyurl.com/3zx777d7</a>

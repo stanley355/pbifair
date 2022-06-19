@@ -16,7 +16,7 @@ const Quest5 = () => {
           <li>Type the information from the video you have watched in Ms.word/Gdocs. </li>
           <li>
             Save your file and name it with this format:
-            <strong> Nickname_EDU-fields </strong>(Note: Nickname as registered in Finders Seekers)
+            <strong>Nickname_EDU-fields</strong>  (Note: Nickname as registered in Finders Seekers)
           </li>
           <li>
             Upload the file to <a href="https://tinyurl.com/3zjxx5ds">https://tinyurl.com/3zjxx5ds </a>.
