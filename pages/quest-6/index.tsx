@@ -38,7 +38,7 @@ const Quest6 = () => {
 
   return (
     <div className="container">
-      <div className={styles.quest4}>
+      <div className={styles.quest6}>
         <Instruction />
         <PassForm
           password="indulge"

@@ -26,7 +26,7 @@ const Quest8 = () => {
 
   return (
     <div className="container">
-      <div className={styles.quest4}>
+      <div className={styles.quest8}>
         <Instruction />
         <PassForm
           password="present"

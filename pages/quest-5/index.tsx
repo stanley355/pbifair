@@ -30,7 +30,7 @@ const Quest5 = () => {
 
   return (
     <div className="container">
-      <div className={styles.quest4}>
+      <div className={styles.quest5}>
         <Instruction />
         <PassForm
           password="grimace"
