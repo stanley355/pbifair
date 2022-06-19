@@ -19,8 +19,8 @@ const Quest3 = () => {
         <div className={instructionStyle.instructions__subtitle}>Sentences:</div>
         <ol>
           <li>Day apter day</li>
-          <li>Full the robe. (Pull)</li>
-          <li>They are feeding the lamp (Lamb)</li>
+          <li>Full the robe.</li>
+          <li>They are feeding the lamp</li>
           <li>It seems everything is vair</li>
           <li>Weter bottle</li>
           <li>FIVE STAGES OF GREEF </li>

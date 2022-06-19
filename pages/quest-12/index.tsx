@@ -7,7 +7,7 @@ const Quest12 = () => {
   const Instruction = () => {
     return (
       <div className={instructionStyle.instructions}>
-        <h3>#12 Figure in the Picture</h3>
+        <h3>#12 Dear Lessons</h3>
         <div>Hello Seekers,</div>
         <div>Welcome to the 12th Mission: <strong>Dear Lessons</strong> .</div>
         <ol>
@@ -31,7 +31,7 @@ const Quest12 = () => {
       <div className={styles.quest12}>
         <Instruction />
         <PassForm
-          password="present"
+          password="courses"
           nextURL='/quest-13/'
           level={12}
         />
