@@ -12,8 +12,14 @@ const Quest3 = () => {
         <ol>
           <li>Find the misspelled words in each of the sentences below.</li>
           <li>Fix the misspelled letter of the misspelled words.</li>
-          <li>Arrange all the corrected letters from no. 1 to no. 7 to form a word.</li>
-          <li>Enter this word as your ticket to continue to the next stage.</li>
+          <li>Arrange all <u>the corrected letters</u>  from no. 1 to no. 7 to form a <strong>WORD</strong> .</li>
+          <li>Enter the formed <strong>WORD</strong>  as your ticket to continue to the next stage.</li>
+          <li>If you have any problem, contact the PIC through Whatsapp (Melan -
+            <a href="https://api.whatsapp.com/send/?phone=6288225829329"> 0882-2582-9329 </a>
+            or Jenifer -
+            <a href="https://api.whatsapp.com/send/?phone=6281251790688 "> 0812-5179-0688</a>
+            )
+          </li>
         </ol>
 
         <div className={instructionStyle.instructions__subtitle}>Sentences:</div>
