@@ -41,6 +41,8 @@ const Quest2 = () => {
           password="compose"
           nextURL='/quest-3/'
           level={2}
+          startMonth={6}
+          startDate={30}
         />
       </div>
     </div>

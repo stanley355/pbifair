@@ -50,6 +50,8 @@ const Quest4 = () => {
           password="snuggle"
           nextURL='/quest-5/'
           level={4}
+          startMonth={7}
+          startDate={1}
         />
       </div>
     </div>

@@ -44,6 +44,8 @@ const Quest3 = () => {
           password="fpbfair"
           nextURL='/quest-4/'
           level={3}
+          startMonth={7}
+          startDate={1}
         />
       </div>
     </div>
