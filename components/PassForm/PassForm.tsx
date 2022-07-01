@@ -9,21 +9,18 @@ interface PassFormInterface {
   password: string,
   nextURL: string,
   level: number,
-  startMonth: number,
   startDate: number,
 }
 
 const PassForm = (props: PassFormInterface) => {
-  const { password, nextURL, level, startMonth, startDate } = props;
+  const { password, nextURL, level, startDate } = props;
   const [showError, setShowError] = useState(false);
   const [showTimeError, setShowTimeError] = useState(false);
 
   const getCorrectDate = () => {
     const date = new Date();
-    if (date.getMonth() + 1 >= startMonth) {
-      if (date.getDate() >= startDate) {
-        return true
-      }
+    if (date.getDate() >= startDate) {
+      return true
     }
     return false;
   }
@@ -63,7 +60,7 @@ const PassForm = (props: PassFormInterface) => {
       <input type="password" name='answer' placeholder='Enter the ticket...' />
       <button type="submit">Submit</button>
       {showError && <div className={styles.passForm__error}>Oops Wrong Passcode</div>}
-      {showTimeError && <div className={styles.passForm__error}>The Game will start by {month[startMonth - 1]} {startDate} from 12 AM to 6 PM</div>}
+      {showTimeError && <div className={styles.passForm__error}>The Game will start by July {startDate > new Date().getDate() ? startDate : new Date().getDate()} from 12 AM to 6 PM</div>}
     </form>
   );
 }

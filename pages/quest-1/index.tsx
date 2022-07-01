@@ -48,8 +48,7 @@ const Quest1 = () => {
           password="replace"
           nextURL='/quest-2/'
           level={1}
-          startMonth={6}
-          startDate={30}
+          startDate={1}
         />
       </div>
     </div>

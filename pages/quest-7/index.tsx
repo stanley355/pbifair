@@ -41,7 +41,6 @@ const Quest7 = () => {
           password="gesture"
           nextURL='/quest-8/'
           level={7}
-          startMonth={7}
           startDate={3}
         />
       </div>

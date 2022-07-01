@@ -31,7 +31,6 @@ const Quest9 = () => {
           password="missile"
           nextURL='/quest-10/'
           level={9}
-          startMonth={7}
           startDate={4}
         />
       </div>

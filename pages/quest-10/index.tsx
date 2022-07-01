@@ -37,7 +37,6 @@ const Quest10 = () => {
           password="soprano"
           nextURL='/quest-11/'
           level={10}
-          startMonth={7}
           startDate={4}
         />
       </div>
